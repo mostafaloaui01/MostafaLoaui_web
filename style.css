@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* this is for the all html framwork  */
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+}
+/* this is the body options */
+body{
+    background-color: #4482ce;
+    background: rgb(63,94,251);
+background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(70,233,252,1) 100%);
+}
+/* the main header options  */
+header{
+    background-color: #DADDFC;
+    background: rgb(63,94,251);
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(70,233,252,1) 100%);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px 75px;
+}
+/* Mostafa loaui logo on top left in header */
+.logo{
+    color: rgb(0, 18, 53);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight:700; 
+    font-size: 1.8em;   
+}
+/* 3 option on the top right in header selction of (a) link  */
+.navigation a{ 
+    color: #23456e;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2em;
+    padding-left: 20px;
+
+}
+/* over mouse color changes */
+.navigation a:hover{
+    color:#cc9d8d;
+} 
+/* 1th section after header the main sizeing  */
+section{
+    padding: 150px 150px;
+}
+.main{
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+} 
+/* ( welcome to my website ) line */
+.main h2{   
+    color:rgb(255, 255, 255);
+    font-size: 2.5em;
+    font-weight: 500;
+}
+/* ( i'am ) line  */
+.main h2 span{
+    color: #ffffff;
+    display:inline-block;
+    margin-top: 11px;
+    padding-left: 20px;
+    font-size:1em;
+    font-weight: 300;
+    letter-spacing: 1.5px; 
+    font-style: italic;
+}
+/* ( Mostaf Louai Ahmed ) line  */
+.main h2 span b{
+    color: #ecb5a4;
+    font-stretch: expanded;
+    font-style: italic;
+    font-size: 1.2em;
+
+}
+/* ( A computer science student at Obour Institute.....) line */
+.main h3{
+    color:#1a2b3d;
+    margin-bottom:30px;
+    padding-left: 20px;
+    font-weight: 600;
+    font-size: 1.4em;
+}
+.main h3 b{
+    color: rgb(221, 233, 255);
+}
+/* ( contact Me bottun ) */
+.about-btn{
+    color:#1a2b3d;
+    background-color: #e48d73;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 20px; 
+    margin-bottom: 15px;
+    margin-left: 35px;
+    /* this is transstion for better looking  meaning is 1 second to move the scale*/
+    transition: 1s ease; 
+}
+/* ( contact Me bottun ) after hover */
+.about-btn:hover{
+    background-color: rgb(248, 171, 150); 
+    /* the transform scale is (x,y) but its = to scale(N) */
+    transform: scale(1.1, 1.1);   
+}
+.socail-icon a{
+    color:#ffffff;
+    font-size: 1.7em;
+    padding-right: 1px; 
+    margin-left: 30px;
+}
+
+
+
+
+
+
+
+/* start 2th section with services */
+.title{
+    display: flex;
+    justify-content: center;
+    color: #fcb9a3;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px; 
+    text-transform: uppercase;
+}
+.contant{
+    display: flex;
+    justify-content: center;
+    /* row is side to side culcom is on each other */
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card1{
+    background-color:#d0d4ff;
+    width: 21.25em;
+    /* in box shadow the first value is for up(+) & dwon(-) 
+    second value is for right (+) & left(-) 
+    the third value for how much blured (+) 
+    the 4th value is the color  */
+    box-shadow: 0 5px 25px rgba(17, 64, 107, 0.9);
+    border-radius: 25px; 
+    /* padding is from the inside elements */
+    padding: 40px;
+    /* margin is from the outside elements */
+    margin: 20px;
+    transition: 1s ease;
+}
+.card1:hover{
+    transform: scale(1.1, 1.1);
+    background-color: #fc9595;
+}
+/* CARD 2 */
+.card2{
+    background-color:#d0d4ff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(17, 64, 107, 0.9);
+    border-radius: 25px; 
+    padding: 40px;
+    margin: 20px;
+    transition: 1s ease;
+}
+.card2:hover{
+    transform: scale(1.1, 1.1);
+    background-color: #dbd35c;
+}
+/* CARD 3 */
+.card3{
+    background-color:#d0d4ff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(17, 64, 107, 0.9);
+    border-radius: 30px; 
+    padding: 40px;
+    margin: 20px;
+    transition: 1s ease;
+}
+.card3:hover{
+    transform: scale(1.1, 1.1);
+    background-color: #5fb686;
+}
+.icon1{
+    color: #fc9595;
+    font-size: 5em;
+    text-align: center;
+}
+.icon2{
+    color: #dbd35c;
+    font-size: 5em;
+    text-align: center;
+}
+.icon3{
+    color: #5fb686;
+    font-size: 5em;
+    text-align: center;
+}
+.infocd1 h3{
+    text-align: center;
+    color: #1a2b3d;
+    text-transform: uppercase;
+    font-weight:800;
+    font-size: 1.3em; 
+}
+.infocd1 p{
+    text-align: center;
+    color: #000000;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+/* start 2th section with services */
+.titlect{
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px; 
+    text-transform: uppercase;
+}
+.contantct{
+    display: flex;
+    justify-content: center;
+    /* row is side to side culcom is on each other */
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card1ct{
+    background-color:#d0d4ff;
+    width: 21.25em;
+    /* in box shadow the first value is for up(+) & dwon(-) 
+    second value is for right (+) & left(-) 
+    the third value for how much blured (+) 
+    the 4th value is the color  */
+    box-shadow: 0 5px 25px rgba(17, 64, 107, 0.9);
+    border-radius: 25px; 
+    /* padding is from the inside elements */
+    padding: 40px;
+    /* margin is from the outside elements */
+    margin: 20px;
+    transition: 1s ease;
+}
+.card1ct:hover{
+    transform: scale(1.1, 1.1);
+    background-color: #fc9595;
+}
+/* CARD 2 */
+.card2ct{
+    background-color:#d0d4ff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(17, 64, 107, 0.9);
+    border-radius: 25px; 
+    padding: 40px;
+    margin: 20px;
+    transition: 1s ease;
+}
+.card2ct:hover{
+    transform: scale(1.1, 1.1);
+    background-color: #5fb686;
+}
+
+
+.icon1ct{
+    color: #515eda;
+    font-size: 5em;
+    text-align: center;
+    transition: 1s ease;
+}
+.icon1ct:hover{
+    color: #d0d4ff;
+
+}
+.icon2ct{
+    color: #5fb686;
+    font-size: 5em;
+    text-align: center;
+    transition: 1s ease;
+}
+.icon2ct:hover{
+    color: #ffffff;
+
+}
+.icon3ct{
+    color: #5fb686;
+    font-size: 5em;
+    text-align: center;
+}
+.infocd1ct h3{
+    text-align: center;
+    color: #1a2b3d;
+    text-transform: uppercase;
+    font-weight:800;
+    font-size: 1.3em; 
+}
+.infocd1ct p{
+    text-align: center;
+    color: #000000;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+
+
+
+
+
